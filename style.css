@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.carregamento {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+  }
+  .carregamento:after {
+    margin-top: 350px;
+    content: "";
+    display: block;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 8px dotted #000000;
+    border-color: #ff00c8 transparent #00f7ff transparent;
+    animation: loader 2.1s linear infinite; }
+
+    @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
